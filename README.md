@@ -1,2 +1,2 @@
-# olivier-raphael-philippe-megazord
-Megazord Olivier Lalonde Philippe Trudel Raphaël Fillion - 2021
+# olivier-raphael-megazord
+Megazord Olivier Lalonde Raphaël Fillion - 2021
