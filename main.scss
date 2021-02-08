@@ -10,6 +10,15 @@ $secondary-alt: #6bc5a6;
 $title: 'hammersmith One', sans-serif;
 $regular: 'roboto', sans-serif;
 
+//taille text 
+$text-regular: 1.2rem;
+$text-title: 6rem;
+$text-subtitle: 1.8rem;
+
+* {padding: 0; margin: 0; box-sizing: border-box}
+
+html, body { font-family: $regular}
+
 @import 'accueil';
 @import 'discographie';
 
