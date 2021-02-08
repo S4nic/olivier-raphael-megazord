@@ -9,14 +9,20 @@ html, body {
 }
 
 .heros {
+  position: relative;
   width: 100vw;
   height: 100vh;
+  font-family: "hammersmith One", sans-serif;
 }
 
 .heros picture {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+}
+
+.heros picture_heros {
+  object-fit: fill;
 }
 
 .heros .container {
