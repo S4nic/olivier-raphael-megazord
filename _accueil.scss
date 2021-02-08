@@ -1,0 +1,20 @@
+.heros {
+    width: 100vw; height: 100vh;
+
+    picture {
+        position: absolute;
+        width: 100vw; height: 100vh;
+    }
+
+    .container {
+        height: 100vh;
+
+        .row {
+            height: 100vh;
+        }
+    }
+}
+
+@media screen and (landscape) {
+    .heros { height: 56.25%; }
+}

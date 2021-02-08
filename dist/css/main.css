@@ -7,3 +7,28 @@
 html, body {
   font-family: "roboto", sans-serif;
 }
+
+.heros {
+  width: 100vw;
+  height: 100vh;
+}
+
+.heros picture {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.heros .container {
+  height: 100vh;
+}
+
+.heros .container .row {
+  height: 100vh;
+}
+
+@media screen and (landscape) {
+  .heros {
+    height: 56.25%;
+  }
+}
