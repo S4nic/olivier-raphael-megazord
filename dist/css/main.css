@@ -41,7 +41,13 @@ html, body {
 }
 
 .bgi {
-  width: auto;
+  height: 150vh;
+  width: 120vw;
   position: absolute;
   background-image: linear-gradient(to bottom, transparent, #00aeff);
+}
+
+p {
+  font-family: "roboto", sans-serif;
+  font-size: 1.2rem;
 }

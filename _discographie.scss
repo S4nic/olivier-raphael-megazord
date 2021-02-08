@@ -5,8 +5,14 @@
     object-fit:contain;
 }
 
-.bgi{
-    width: auto;
+.bgi {
+    height: 150vh;
+    width: 120vw;
     position: absolute;
-    background-image: linear-gradient(to bottom, transparent, $primary);
+    background-image: linear-gradient(to bottom, transparent, #00aeff);
+  }
+
+p{
+    font-family: $regular;
+    font-size: $text-regular;
 }
