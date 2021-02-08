@@ -1,0 +1,12 @@
+.album{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit:contain;
+}
+
+.bgi{
+    width: auto;
+    position: absolute;
+    background-image: linear-gradient(to bottom, transparent, $primary);
+}
