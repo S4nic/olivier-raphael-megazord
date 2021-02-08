@@ -47,7 +47,7 @@ html, body {
 }
 
 .bgi {
-  height: 150vh;
+  height: 200vh;
   width: 120vw;
   position: absolute;
   background-image: linear-gradient(to bottom, transparent, #00aeff);
