@@ -1,5 +1,14 @@
+//color
+$bg : #262626;
+$text : #eaeaea;
+$primary: #00aeff;
+$primary-alt: #9fe1ff;
+$secondary: #18684d;
+$secondary-alt: #6bc5a6;
 
+//typo
+$title: 'hammersmith One', sans-serif;
 
-@import url('dist/css/accueil.css');
-@import url('dist/css/discographie.css');
+@import "dist/css/accueil.css";
+@import "dist/css/discographie.css";
 
