@@ -1,0 +1,18 @@
+.album{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit:contain;
+}
+
+.bgi {
+    height: 200vh;
+    width: 120vw;
+    position: absolute;
+    background-image: linear-gradient(to bottom, transparent, #00aeff);
+  }
+
+p{
+    font-family: $regular;
+    font-size: $text-regular;
+}
