@@ -1,26 +1,80 @@
 .heros {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-family: $title;
+
+  picture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    .img_heros {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 60% 50%;
+    }
+  }
+
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 25%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  .container {
+    height: 100vh;
     position: relative;
-    width: 100vw; height: 100vh;
-    font-family: $title;
+    z-index: 99;
 
-    picture {
-        position: absolute;
-        width: 100%; height: 100%;
+    .row {
+      height: 100vh;
 
-        &_heros {
-        object-fit: fill;
+      article {
+        text-align: center;
+
+        header {
+          .stroke {
+            color: transparent;
+            -webkit-text-stroke: 4px $text;
+          }
+
+          .spacing {
+            letter-spacing: 10px;
+          }
         }
-    }
 
-    .container {
-        height: 100vh;
-
-        .row {
-            height: 100vh;
+        .btn {
+          padding: 0.8rem 1.2rem;
+          margin: 1rem;
         }
+
+        .btn.btn--primary {
+          color: $text;
+          background-color: $primary;
+          &:hover {
+            background-color: $primary-hover;
+          }
+        }
+      }
     }
+  }
 }
 
-@media screen and (landscape) {
-    .heros { height: 56.25%; }
+@media screen and (orientation: landscape) {
+  .heros {
+    height: 56.25%;
+
+    .background {
+        background-image: linear-gradient(transparent, transparent);
+        background-color: $bg;
+        opacity: 0.5;
+    }
+  }
 }

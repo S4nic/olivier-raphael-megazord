@@ -1,23 +1,30 @@
 //color
 $bg : #262626;
 $text : #eaeaea;
+$text-alt : #202020;
 $primary: #00aeff;
 $primary-alt: #9fe1ff;
+$primary-hover: #1893cc;
 $secondary: #18684d;
 $secondary-alt: #6bc5a6;
+$secondary-hover: #144e3b;
 
 //typo
 $title: 'hammersmith One', sans-serif;
 $regular: 'roboto', sans-serif;
 
 //taille text 
-$text-regular: 1.2rem;
-$text-title: 6rem;
+$text-title: 8rem;
 $text-subtitle: 1.8rem;
+$text-regular: 1.2rem;
 
-* {padding: 0; margin: 0; box-sizing: border-box}
+* {padding: 0; margin: 0;}
 
-html, body { font-family: $regular}
+html, body {color: $text; }
+
+h1 { font-size: $text-title; font-family: $title; }
+h3 { font-size: $text-subtitle; font-family: $regular; }
+h5 { font-size: $text-regular; font-family: $regular;}
 
 @import 'accueil';
 @import 'discographie';
