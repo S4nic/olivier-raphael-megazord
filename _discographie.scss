@@ -1,18 +1,43 @@
+html{
+    background-color: #262626;
+
+}
 .album{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     object-fit:contain;
+    background-color: #262626;
 }
 
 .bgi {
-    height: 200vh;
-    width: 120vw;
+    height: 150vh;
+    width: 100%;
     position: absolute;
     background-image: linear-gradient(to bottom, transparent, #00aeff);
   }
 
-p{
+.container{
+    padding-bottom: 200px;
     font-family: $regular;
     font-size: $text-regular;
+    .disco{
+        margin-bottom: 2vh;
+        font-family: $title;
+        font-size: $text-subtitle;
+    }
+    button{
+        margin-top: 2vh;
+        background-color: $secondary;
+        border: none;
+        font-family: $regular;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    button:hover{
+        background-color: $secondary-hover;
+        
+    }
 }

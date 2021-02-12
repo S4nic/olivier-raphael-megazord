@@ -97,21 +97,48 @@ h5 {
   }
 }
 
+html {
+  background-color: #262626;
+}
+
 .album {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   object-fit: contain;
+  background-color: #262626;
 }
 
 .bgi {
-  height: 200vh;
-  width: 120vw;
+  height: 150vh;
+  width: 100%;
   position: absolute;
   background-image: linear-gradient(to bottom, transparent, #00aeff);
 }
 
-p {
+.container {
+  padding-bottom: 200px;
   font-family: "roboto", sans-serif;
   font-size: 1.2rem;
+}
+
+.container .disco {
+  margin-bottom: 2vh;
+  font-family: "hammersmith One", sans-serif;
+  font-size: 1.8rem;
+}
+
+.container button {
+  margin-top: 2vh;
+  background-color: #18684d;
+  border: none;
+  font-family: "roboto", sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.container button:hover {
+  background-color: #144e3b;
 }
