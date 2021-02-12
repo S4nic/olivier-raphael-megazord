@@ -38,30 +38,6 @@
 
       article {
         text-align: center;
-
-        header {
-          .stroke {
-            color: transparent;
-            -webkit-text-stroke: 4px $text;
-          }
-
-          .spacing {
-            letter-spacing: 10px;
-          }
-        }
-
-        .btn {
-          padding: 0.8rem 1.2rem;
-          margin: 1rem;
-        }
-
-        .btn.btn--primary {
-          color: $text;
-          background-color: $primary;
-          &:hover {
-            background-color: $primary-hover;
-          }
-        }
       }
     }
   }

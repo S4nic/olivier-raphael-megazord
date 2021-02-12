@@ -26,6 +26,29 @@ h1 { font-size: $text-title; font-family: $title; }
 h3 { font-size: $text-subtitle; font-family: $regular; }
 h5 { font-size: $text-regular; font-family: $regular;}
 
+.stroke { color: transparent; -webkit-text-stroke: 4px $text; }
+
+.spacing5 { letter-spacing: 5px; }
+.spacing10 { letter-spacing: 10px; }
+
+.btn { padding: 0.8rem 1.2rem; margin: 1rem; }
+
+.btn.btn--primary {
+    color: $text;
+    background-color: $primary;
+        &:hover {
+            background-color: $primary-hover;
+    }
+}
+
+.btn.btn--secondary {
+    color: $text;
+    background-color: $secondary;
+        &:hover {
+            background-color: $secondary-hover;
+    }
+}
+
 @import 'accueil';
 @import 'discographie';
 

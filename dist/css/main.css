@@ -22,6 +22,42 @@ h5 {
   font-family: "roboto", sans-serif;
 }
 
+.stroke {
+  color: transparent;
+  -webkit-text-stroke: 4px #eaeaea;
+}
+
+.spacing5 {
+  letter-spacing: 5px;
+}
+
+.spacing10 {
+  letter-spacing: 10px;
+}
+
+.btn {
+  padding: 0.8rem 1.2rem;
+  margin: 1rem;
+}
+
+.btn.btn--primary {
+  color: #eaeaea;
+  background-color: #00aeff;
+}
+
+.btn.btn--primary:hover {
+  background-color: #1893cc;
+}
+
+.btn.btn--secondary {
+  color: #eaeaea;
+  background-color: #18684d;
+}
+
+.btn.btn--secondary:hover {
+  background-color: #144e3b;
+}
+
 .heros {
   position: relative;
   width: 100vw;
@@ -61,29 +97,6 @@ h5 {
 
 .heros .container .row article {
   text-align: center;
-}
-
-.heros .container .row article header .stroke {
-  color: transparent;
-  -webkit-text-stroke: 4px #eaeaea;
-}
-
-.heros .container .row article header .spacing {
-  letter-spacing: 10px;
-}
-
-.heros .container .row article .btn {
-  padding: 0.8rem 1.2rem;
-  margin: 1rem;
-}
-
-.heros .container .row article .btn.btn--primary {
-  color: #eaeaea;
-  background-color: #00aeff;
-}
-
-.heros .container .row article .btn.btn--primary:hover {
-  background-color: #1893cc;
 }
 
 @media screen and (orientation: landscape) {
