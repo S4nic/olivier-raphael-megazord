@@ -2,35 +2,56 @@ html{
     background-color: #262626;
 
 }
+
 .album{
+    height: 100%;
+    width: 100%;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    object-fit:contain;
+    left: 0%;
+    top: 0%;
+
     background-color: #262626;
+
+    img{
+        position: absolute;
+        object-fit:contain; 
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .bgi {
-    height: 150vh;
+    height: 100vh;
     width: 100%;
+    top: 0%;
+    left: 0%;
     position: absolute;
     background-image: linear-gradient(to bottom, transparent, #00aeff);
   }
 
+.hero{
+    position: relative;
+    height: 100vh;
+}
+
 .container{
-    padding-bottom: 200px;
+    height: 100%;
+    position: relative;
     font-family: $regular;
     font-size: $text-regular;
+
+    .row{
+        height: 100%;
+    }
     .disco{
-        margin-bottom: 2vh;
         font-family: $title;
         font-size: $text-subtitle;
     }
     button{
-        margin-top: 2vh;
         background-color: $secondary;
         border: none;
         font-family: $regular;
+        padding:5px;
         padding-left: 10px;
         padding-right: 10px;
         text-align: center;

@@ -102,37 +102,56 @@ html {
 }
 
 .album {
+  height: 100%;
+  width: 100%;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  object-fit: contain;
+  left: 0%;
+  top: 0%;
   background-color: #262626;
 }
 
-.bgi {
-  height: 150vh;
+.album img {
+  position: absolute;
+  object-fit: contain;
+  height: 100%;
   width: 100%;
+}
+
+.bgi {
+  height: 100vh;
+  width: 100%;
+  top: 0%;
+  left: 0%;
   position: absolute;
   background-image: linear-gradient(to bottom, transparent, #00aeff);
 }
 
+.hero {
+  position: relative;
+  height: 100vh;
+}
+
 .container {
-  padding-bottom: 200px;
+  height: 100%;
+  position: relative;
   font-family: "roboto", sans-serif;
   font-size: 1.2rem;
 }
 
+.container .row {
+  height: 100%;
+}
+
 .container .disco {
-  margin-bottom: 2vh;
   font-family: "hammersmith One", sans-serif;
   font-size: 1.8rem;
 }
 
 .container button {
-  margin-top: 2vh;
   background-color: #18684d;
   border: none;
   font-family: "roboto", sans-serif;
+  padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
