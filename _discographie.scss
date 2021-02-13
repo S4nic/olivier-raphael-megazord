@@ -47,18 +47,10 @@ html{
         font-family: $title;
         font-size: $text-subtitle;
     }
-    button{
-        background-color: $secondary;
-        border: none;
+
+    p{
         font-family: $regular;
-        padding:5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        text-align: center;
-        border-radius: 10px;
+        font-size: $text-regular;
     }
-    button:hover{
-        background-color: $secondary-hover;
-        
-    }
+
 }

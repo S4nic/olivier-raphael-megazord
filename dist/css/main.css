@@ -160,17 +160,7 @@ html {
   font-size: 1.8rem;
 }
 
-.container button {
-  background-color: #18684d;
-  border: none;
+.container p {
   font-family: "roboto", sans-serif;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.container button:hover {
-  background-color: #144e3b;
+  font-size: 1.2rem;
 }
