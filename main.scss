@@ -2,9 +2,9 @@
 $bg : #262626;
 $text : #eaeaea;
 $text-alt : #202020;
-$primary: #00aeff;
+$primary: #0097dd;
 $primary-alt: #9fe1ff;
-$primary-hover: #1893cc;
+$primary-hover: #0076c5;
 $secondary: #18684d;
 $secondary-alt: #6bc5a6;
 $secondary-hover: #144e3b;
@@ -33,7 +33,7 @@ h5 { font-size: $text-regular; font-family: $regular;}
 .spacing5 { letter-spacing: 5px; }
 .spacing10 { letter-spacing: 10px; }
 
-.btn { padding: 0.8rem 1.2rem; margin: 1rem; }
+.btn { padding: 0.8rem 1.2rem; margin: 1rem; font-family: $title;}
 
 .btn.btn--primary {
     color: $text;

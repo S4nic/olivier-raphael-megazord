@@ -43,15 +43,16 @@ h5 {
 .btn {
   padding: 0.8rem 1.2rem;
   margin: 1rem;
+  font-family: "hammersmith One", sans-serif;
 }
 
 .btn.btn--primary {
   color: #eaeaea;
-  background-color: #00aeff;
+  background-color: #0097dd;
 }
 
 .btn.btn--primary:hover {
-  background-color: #1893cc;
+  background-color: #0076c5;
 }
 
 .btn.btn--secondary {
@@ -160,16 +161,6 @@ html {
   height: 100%;
 }
 
-.container .disco {
-  font-family: "hammersmith One", sans-serif;
-  font-size: 1.8rem;
-}
-
 .container .disco .btn {
   margin-left: 0;
-}
-
-.container p {
-  font-family: "roboto", sans-serif;
-  font-size: 1.2rem;
 }
