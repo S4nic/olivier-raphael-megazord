@@ -14,7 +14,7 @@ html{
 
     img{
         position: absolute;
-        object-fit:contain; 
+        object-fit: cover; 
         height: 100%;
         width: 100%;
     }
@@ -46,6 +46,8 @@ html{
     .disco{
         font-family: $title;
         font-size: $text-subtitle;
+
+        .btn { margin-left: 0; }
     }
 
     p{

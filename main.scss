@@ -15,6 +15,7 @@ $regular: 'roboto', sans-serif;
 
 //taille text 
 $text-title: 8rem;
+$text-alt-title: 3.8rem;
 $text-subtitle: 1.8rem;
 $text-regular: 1.2rem;
 
@@ -23,6 +24,7 @@ $text-regular: 1.2rem;
 html, body {color: $text;}
 
 h1 { font-size: $text-title; font-family: $title; }
+h2 { font-size: $text-alt-title; font-family: $title; }
 h3 { font-size: $text-subtitle; font-family: $regular; }
 h5 { font-size: $text-regular; font-family: $regular;}
 

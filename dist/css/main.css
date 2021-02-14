@@ -12,6 +12,11 @@ h1 {
   font-family: "hammersmith One", sans-serif;
 }
 
+h2 {
+  font-size: 3.8rem;
+  font-family: "hammersmith One", sans-serif;
+}
+
 h3 {
   font-size: 1.8rem;
   font-family: "roboto", sans-serif;
@@ -125,7 +130,7 @@ html {
 
 .album img {
   position: absolute;
-  object-fit: contain;
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }
@@ -158,6 +163,10 @@ html {
 .container .disco {
   font-family: "hammersmith One", sans-serif;
   font-size: 1.8rem;
+}
+
+.container .disco .btn {
+  margin-left: 0;
 }
 
 .container p {
