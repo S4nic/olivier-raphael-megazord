@@ -26,6 +26,11 @@ h3 {
   font-family: "roboto", sans-serif;
 }
 
+h4 {
+  font-size: 1.5rem;
+  font-family: "roboto", sans-serif;
+}
+
 h5 {
   font-size: 1.2rem;
   font-family: "roboto", sans-serif;
@@ -107,6 +112,15 @@ h5 {
 
 .heros .container .row article {
   text-align: center;
+}
+
+section .container h3 {
+  font-family: "hammersmith One", sans-serif;
+  margin-top: 20px;
+}
+
+section .container .card {
+  margin: 10px 0;
 }
 
 @media screen and (orientation: landscape) {
