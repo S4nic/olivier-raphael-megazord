@@ -4,6 +4,10 @@
 }
 
 html, body {
+  color: #202020;
+}
+
+.heros {
   color: #eaeaea;
 }
 
@@ -145,7 +149,7 @@ html {
   background-image: linear-gradient(to bottom, transparent, #00aeff);
 }
 
-.hero {
+.heros {
   position: relative;
   height: 100vh;
 }
