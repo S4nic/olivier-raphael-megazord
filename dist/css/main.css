@@ -154,17 +154,21 @@ html {
   height: 100vh;
 }
 
-.container {
+.heros .container {
   height: 100%;
   position: relative;
   font-family: "roboto", sans-serif;
   font-size: 1.2rem;
 }
 
-.container .row {
+.heros .container .row {
   height: 100%;
 }
 
-.container .disco .btn {
+.heros .container .disco .btn {
   margin-left: 0;
+}
+
+section .container {
+  margin: 20px;
 }

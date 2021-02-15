@@ -32,9 +32,8 @@ html{
 .heros{
     position: relative;
     height: 100vh;
-}
-
-.container{
+    
+    .container{
     height: 100%;
     position: relative;
     font-family: $regular;
@@ -47,4 +46,13 @@ html{
         .btn { margin-left: 0; }
     }
 
+}
+}
+
+
+section{
+    .container{
+        margin: 20px;
+    }
+    
 }
