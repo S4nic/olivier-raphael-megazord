@@ -17,6 +17,7 @@ $regular: 'roboto', sans-serif;
 $text-title: 8rem;
 $text-alt-title: 3.8rem;
 $text-subtitle: 1.8rem;
+$text-subtitle-alt: 1.5rem;
 $text-regular: 1.2rem;
 
 * {padding: 0; margin: 0;}
@@ -28,9 +29,8 @@ html, body {color: $text-alt;}
 h1 { font-size: $text-title; font-family: $title; }
 h2 { font-size: $text-alt-title; font-family: $title; }
 h3 { font-size: $text-subtitle; font-family: $regular; }
+h4 { font-size: $text-subtitle-alt; font-family: $regular; }
 h5 { font-size: $text-regular; font-family: $regular;}
-
-
 
 .stroke { color: transparent; -webkit-text-stroke: 4px $text; }
 
