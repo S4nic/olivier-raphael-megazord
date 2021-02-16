@@ -119,6 +119,10 @@ section .container h3 {
   margin-top: 20px;
 }
 
+section .container h3 span {
+  color: #0097dd;
+}
+
 section .container h4 {
   color: #0097dd;
 }
