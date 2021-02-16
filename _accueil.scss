@@ -46,7 +46,22 @@
 section {
   .container {
     h3 { font-family: $title; margin-top: 20px; }
-    .card { margin: 10px 0; } 
+    h4 { color: $primary }
+    .card { 
+      margin: 10px 0; 
+      &-body {
+        span {font-family: $title; color: $primary; }
+      }
+      &-footer {
+        .btn { 
+          width: 100%; margin: 10px 0; 
+          a {
+            text-decoration: none;
+            color: $text;
+          }
+        }
+      }
+    } 
   }
 }
 

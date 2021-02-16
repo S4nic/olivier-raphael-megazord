@@ -8,7 +8,7 @@ html, body {
 }
 
 .heros {
-  color: #eaeaea;
+  color: #ebebeb;
 }
 
 h1 {
@@ -28,7 +28,7 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
-  font-family: "roboto", sans-serif;
+  font-family: "hammersmith One", sans-serif;
 }
 
 h5 {
@@ -38,7 +38,7 @@ h5 {
 
 .stroke {
   color: transparent;
-  -webkit-text-stroke: 4px #eaeaea;
+  -webkit-text-stroke: 4px #ebebeb;
 }
 
 .spacing5 {
@@ -56,7 +56,7 @@ h5 {
 }
 
 .btn.btn--primary {
-  color: #eaeaea;
+  color: #ebebeb;
   background-color: #0097dd;
 }
 
@@ -65,7 +65,7 @@ h5 {
 }
 
 .btn.btn--secondary {
-  color: #eaeaea;
+  color: #ebebeb;
   background-color: #18684d;
 }
 
@@ -119,8 +119,27 @@ section .container h3 {
   margin-top: 20px;
 }
 
+section .container h4 {
+  color: #0097dd;
+}
+
 section .container .card {
   margin: 10px 0;
+}
+
+section .container .card-body span {
+  font-family: "hammersmith One", sans-serif;
+  color: #0097dd;
+}
+
+section .container .card-footer .btn {
+  width: 100%;
+  margin: 10px 0;
+}
+
+section .container .card-footer .btn a {
+  text-decoration: none;
+  color: #ebebeb;
 }
 
 @media screen and (orientation: landscape) {

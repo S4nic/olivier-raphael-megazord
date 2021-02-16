@@ -1,6 +1,6 @@
 //color
 $bg : #262626;
-$text : #eaeaea;
+$text : #ebebeb;
 $text-alt : #202020;
 $primary: #0097dd;
 $primary-alt: #9fe1ff;
@@ -29,7 +29,7 @@ html, body {color: $text-alt;}
 h1 { font-size: $text-title; font-family: $title; }
 h2 { font-size: $text-alt-title; font-family: $title; }
 h3 { font-size: $text-subtitle; font-family: $regular; }
-h4 { font-size: $text-subtitle-alt; font-family: $regular; }
+h4 { font-size: $text-subtitle-alt; font-family: $title; }
 h5 { font-size: $text-regular; font-family: $regular;}
 
 .stroke { color: transparent; -webkit-text-stroke: 4px $text; }
