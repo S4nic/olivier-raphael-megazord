@@ -148,7 +148,7 @@ section .container .card-footer .btn a {
 
 @media screen and (orientation: landscape) {
   .heros {
-    height: 56.25%;
+    height: 56.25vw;
   }
   .heros .background {
     background-image: linear-gradient(transparent, transparent);
@@ -207,5 +207,10 @@ html {
 }
 
 section .container {
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+section ol {
+  margin-top: 20px;
 }
