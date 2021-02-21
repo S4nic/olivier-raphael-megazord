@@ -157,10 +157,6 @@ section .container .card-footer .btn a {
   }
 }
 
-html {
-  background-color: #262626;
-}
-
 .album {
   height: 100%;
   width: 100%;
@@ -207,8 +203,7 @@ html {
 }
 
 section .container {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 30px 0;
 }
 
 section ol {
