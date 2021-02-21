@@ -119,6 +119,16 @@ a {
   text-align: center;
 }
 
+nav {
+  background-color: #0097dd;
+  padding: 1.5rem;
+}
+
+nav .navbar-brand {
+  font-family: "hammersmith One", sans-serif;
+  font-size: 1.8rem;
+}
+
 section .container h3 {
   font-family: "hammersmith One", sans-serif;
   margin-top: 20px;
