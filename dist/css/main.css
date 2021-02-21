@@ -36,6 +36,11 @@ h5 {
   font-family: "roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #ebebeb;
+}
+
 .stroke {
   color: transparent;
   -webkit-text-stroke: 4px #ebebeb;
@@ -139,11 +144,6 @@ section .container .card-body span {
 section .container .card-footer .btn {
   width: 100%;
   margin: 10px 0;
-}
-
-section .container .card-footer .btn a {
-  text-decoration: none;
-  color: #ebebeb;
 }
 
 @media screen and (orientation: landscape) {

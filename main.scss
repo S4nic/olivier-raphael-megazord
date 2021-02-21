@@ -32,6 +32,8 @@ h3 { font-size: $text-subtitle; font-family: $regular; }
 h4 { font-size: $text-subtitle-alt; font-family: $title; }
 h5 { font-size: $text-regular; font-family: $regular;}
 
+a {text-decoration: none; color: $text;}
+
 .stroke { color: transparent; -webkit-text-stroke: 4px $text; }
 
 .spacing5 { letter-spacing: 5px; }
