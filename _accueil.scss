@@ -43,6 +43,13 @@
   }
 }
 
+nav {
+  background-color: $primary;
+  padding: 1.5rem;
+
+  .navbar-brand {font-family: $title; font-size: $text-subtitle;}
+}
+
 section {
   .container {
     h3 { 
