@@ -56,13 +56,13 @@ section{
 footer{
     padding: 20px 0;
     background-color: $secondary;
-    text-align: center;
     color: $text;
     a{
         padding-top: 10px;
         padding-bottom: 10px;
+        transition: all 0.3s ease-in-out;
         &:hover{
-            color: #8d8d8d;
+            color: $text-hover;
         }
     }
 }

@@ -223,13 +223,13 @@ section ol {
 footer {
   padding: 20px 0;
   background-color: #18684d;
-  text-align: center;
   color: #ebebeb;
 }
 
 footer a {
   padding-top: 10px;
   padding-bottom: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 footer a:hover {
