@@ -52,3 +52,17 @@ section{
     }
     
 }
+
+footer{
+    padding: 20px 0;
+    background-color: $secondary;
+    text-align: center;
+    color: $text;
+    a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &:hover{
+            color: #8d8d8d;
+        }
+    }
+}
