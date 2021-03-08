@@ -232,13 +232,6 @@ section .container .swiper-container .swiper-pagination-bullet.bullet-active {
   background-color: #262626;
 }
 
-.album img {
-  position: absolute;
-  object-fit: contain;
-  height: 100%;
-  width: 100%;
-}
-
 .bgi {
   height: 100vh;
   width: 100%;
@@ -292,6 +285,16 @@ footer a:hover {
   color: #8d8d8d;
 }
 
-.modal .modal-body img {
-  width: 300px;
+.heros .swiper-container {
+  background-color: #262626;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -99;
+}
+
+.heros .swiper-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
