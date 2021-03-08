@@ -51,24 +51,35 @@
         </div>
       </div>
     </header>
-      <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand"><span class="spacing5">TWRP</span></a>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expended="false" aria-label="Affichage/masquage de la navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="mainNav" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ms-auto flex-nowrap">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link"><h5>Accueil</h5></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="discographie.html" class="nav-link active"><h5>Discographie</h5></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand"
+          ><span class="spacing5">TWRP</span></a
+        >
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expended="false"
+          aria-label="Affichage/masquage de la navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="mainNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto flex-nowrap">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link"><h5>Accueil</h5></a>
+            </li>
+            <li class="nav-item">
+              <a href="discographie.html" class="nav-link active"
+                ><h5>Discographie</h5></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <main>
       <section>
         <div class="container">
@@ -157,18 +168,17 @@
           </div>
         </div>
       </section>
+    </main>
 
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-lg-4 text-center text-lg-start">
-              <h5>Olivier Lalonde</h5>
-              <h5>Raphaël Fillion</h5>
-            </div>
-          
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-lg-4 text-center text-lg-start">
+            <h5 data-bs-toggle="modal" data-bs-target="#oli">Olivier Lalonde</h5>
+            <h5 data-bs-toggle="modal" data-bs-target="#raph">Raphaël Fillion</h5>
+          </div>
 
-
-            <div class="col-xs-12 col-lg-8 text-center text-lg-end">
+          <div class="col-xs-12 col-lg-8 text-center text-lg-end">
             <a
               href="https://github.com/S4nic/olivier-raphael-megazord"
               target="_blank"
@@ -177,10 +187,46 @@
             >
             <h5>©2021</h5>
           </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" id="oli" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Olivier Lalonde</h4>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Fermer la fenêtre"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img\oli.jpg" alt="">
           </div>
         </div>
-      </footer>
-    </main>
+      </div>
+    </div>
+
+    <div class="modal" id="raph" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Raphaël Fillion</h4>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Fermer la fenêtre"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img\raph.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
