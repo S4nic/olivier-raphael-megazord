@@ -200,7 +200,6 @@ section .container .swiper-container .swiper-wrapper .swiper-slide {
 
 section .container .swiper-container .swiper-wrapper .swiper-slide img {
   width: 100%;
-  object-fit: cover;
 }
 
 section .container .swiper-container .swiper-pagination-bullet {
@@ -210,7 +209,6 @@ section .container .swiper-container .swiper-pagination-bullet {
 
 section .container .swiper-container .swiper-pagination-bullet.bullet-active {
   background: #0097dd;
-  opacity: 1;
 }
 
 @media screen and (orientation: landscape) {

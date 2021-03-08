@@ -71,11 +71,11 @@ section {
         .swiper-slide {
           width: 100%; height: 0;
           padding-bottom: 56.25%;
-          img {width: 100%; object-fit: cover;}
+          img {width: 100%;}
         }
       }
       .swiper-pagination-bullet {background: $text; opacity: 1;}
-      .swiper-pagination-bullet.bullet-active { background: $primary; opacity: 1;}
+      .swiper-pagination-bullet.bullet-active { background: $primary;}
     }
   }
 }
