@@ -53,7 +53,6 @@ a {
 
 .hover {
   cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -118,17 +117,14 @@ a {
 .heros picture .img_heros {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 60% 50%;
-     object-position: 60% 50%;
+  object-fit: cover;
+  object-position: 60% 50%;
 }
 
 .heros .background {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(25%, rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0));
 }
 
@@ -187,7 +183,6 @@ section .container .card-footer .btn {
     height: 56.25vw;
   }
   .heros .background {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
     background-image: linear-gradient(transparent, transparent);
     background-color: #262626;
     opacity: 0.5;
@@ -205,8 +200,7 @@ section .container .card-footer .btn {
 
 .album img {
   position: absolute;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   height: 100%;
   width: 100%;
 }
@@ -217,7 +211,6 @@ section .container .card-footer .btn {
   top: 0%;
   left: 0%;
   position: absolute;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#00aeff));
   background-image: linear-gradient(to bottom, transparent, #00aeff);
 }
 
@@ -258,7 +251,6 @@ footer {
 footer a {
   padding-top: 10px;
   padding-bottom: 10px;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -266,12 +258,6 @@ footer a:hover {
   color: #8d8d8d;
 }
 
-.modal {
-  position: relative;
-}
-
 .modal .modal-body img {
   width: 300px;
-  height: 10px;
 }
-/*# sourceMappingURL=main.css.map */

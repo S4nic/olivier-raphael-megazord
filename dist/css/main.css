@@ -257,3 +257,7 @@ footer a {
 footer a:hover {
   color: #8d8d8d;
 }
+
+.modal .modal-body img {
+  width: 300px;
+}
