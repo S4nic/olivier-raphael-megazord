@@ -51,6 +51,15 @@ a {
   padding-bottom: 56.25%;
 }
 
+.hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.hover:hover {
+  color: #8d8d8d;
+}
+
 .heros {
   color: #ebebeb;
 }
