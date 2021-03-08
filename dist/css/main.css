@@ -191,6 +191,27 @@ section .container .card-footer .btn {
   margin: 10px 0;
 }
 
+section .container .swiper-container .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+section .container .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+
+section .container .swiper-container .swiper-pagination-bullet {
+  background: #ebebeb;
+  opacity: 1;
+}
+
+section .container .swiper-container .swiper-pagination-bullet.bullet-active {
+  background: #0097dd;
+  opacity: 1;
+}
+
 @media screen and (orientation: landscape) {
   .heros {
     height: 56.25vw;
