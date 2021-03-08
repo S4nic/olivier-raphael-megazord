@@ -45,6 +45,12 @@ a {
   color: #ebebeb;
 }
 
+.ratio {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
 .heros {
   color: #ebebeb;
 }
@@ -138,7 +144,7 @@ nav .navbar-brand {
 
 section .container h3 {
   font-family: "hammersmith One", sans-serif;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 section .container h3 span {
