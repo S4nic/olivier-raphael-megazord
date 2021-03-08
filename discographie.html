@@ -7,6 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet"
@@ -25,11 +26,17 @@
   <body>
     <header>
       <div class="heros">
-        <picture class="album">
-          <source
-            srcset="img\02_returntowherever.jpg"
-            media="(min-width: 1000px)"
-          />
+        <div class="swiper-container">
+          <div class="swiper-slide">
+            <img src="/img/01_togetherthroughtime.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/02_returntowherever.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/03_overthetop.jpg">
+          </div>
+        </div>
           <img src="img\01_togetherthroughtime.jpg" />
         </picture>
 
@@ -233,6 +240,7 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/discographie.js"></script>
   </body>
