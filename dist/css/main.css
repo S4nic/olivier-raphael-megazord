@@ -79,7 +79,7 @@ a {
 
 .btn {
   padding: 0.8rem 1.2rem;
-  margin: 1rem;
+  margin: 0.6rem;
   font-family: "hammersmith One", sans-serif;
 }
 
@@ -99,6 +99,19 @@ a {
 
 .btn.btn--secondary:hover {
   background-color: #144e3b;
+}
+
+.modal .btn {
+  padding: 0.5rem 1.6rem;
+  margin: 0.2rem;
+}
+
+.modal-open .container, .modal-open nav, .modal-open footer {
+  filter: blur(10px);
+}
+
+.modal-backdrop {
+  background-color: rgba(50, 50, 50, 0.5);
 }
 
 .heros {
