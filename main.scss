@@ -50,24 +50,16 @@ a {text-decoration: none; color: $text;}
 
 .btn { padding: 0.8rem 1.2rem; margin: 0.6rem; font-family: $title;}
 
-.btn.btn--primary {
-    color: $text;
-    background-color: $primary;
-        &:hover {
-            background-color: $primary-hover;
-    }
+.btn.btn--primary {color: $text;background-color: $primary;
+    &:hover {background-color: $primary-hover;}
 }
 
-.btn.btn--secondary {
-    color: $text;
-    background-color: $secondary;
-        &:hover {
-            background-color: $secondary-hover;
-    }
+.btn.btn--secondary {color: $text;background-color: $secondary;
+        &:hover {background-color: $secondary-hover;}
 }
 
-.modal {.btn {padding: 0.5rem 1.6rem; margin: 0.2rem}}
-.modal-open .container, .modal-open nav, .modal-open footer {filter: blur(10px)}
+.modal {.modal-body { img {display: block; width: 300px; margin: 0 auto}}}
+.modal-open > :not(.modal) {filter: blur(10px)}
 .modal-backdrop {background-color: rgba(50,50,50,0.5);}
 
 @import 'accueil';

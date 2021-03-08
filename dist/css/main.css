@@ -101,12 +101,13 @@ a {
   background-color: #144e3b;
 }
 
-.modal .btn {
-  padding: 0.5rem 1.6rem;
-  margin: 0.2rem;
+.modal .modal-body img {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
 }
 
-.modal-open .container, .modal-open nav, .modal-open footer {
+.modal-open > :not(.modal) {
   filter: blur(10px);
 }
 
