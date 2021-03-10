@@ -16,7 +16,7 @@ $regular: 'roboto', sans-serif;
 
 //taille text 
 $text-title: 8rem;
-$text-alt-title: 3.8rem;
+$text-alt-title: 2.5rem;
 $text-subtitle: 1.8rem;
 $text-subtitle-alt: 1.5rem;
 $text-regular: 1.2rem;
@@ -43,7 +43,7 @@ a {text-decoration: none; color: $text;}
 
 .heros {color: $text}
 
-.stroke { color: transparent; -webkit-text-stroke: 4px $text; }
+.stroke { color: transparent; -webkit-text-stroke: 3px $text; }
 
 .spacing5 { letter-spacing: 5px; }
 .spacing10 { letter-spacing: 10px; }
