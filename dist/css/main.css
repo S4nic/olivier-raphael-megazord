@@ -40,6 +40,10 @@ h5 {
   font-family: "roboto", sans-serif;
 }
 
+section {
+  margin-bottom: 50px;
+}
+
 a {
   text-decoration: none;
   color: #ebebeb;
@@ -167,7 +171,8 @@ nav .navbar-brand {
 
 section .container h3 {
   font-family: "hammersmith One", sans-serif;
-  margin: 20px 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 section .container h3 span {
@@ -258,14 +263,6 @@ section .container .swiper-container .swiper-pagination-bullet.bullet-active {
 
 .heros .container .disco .btn {
   margin-left: 0;
-}
-
-section .container {
-  padding: 30px 0;
-}
-
-section ol {
-  margin-top: 20px;
 }
 
 footer {
