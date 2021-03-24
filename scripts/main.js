@@ -14,7 +14,7 @@ sections.forEach(section => {
 
    gsap.timeline({
        scrollTrigger: {
-           start: 'top 60%', 
+           start: 'top 70%',
            trigger: section,
            toggleActions: 'play none none reverse',
        }
