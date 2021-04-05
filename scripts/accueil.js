@@ -12,15 +12,15 @@ gsap.registerPlugin(ScrollTrigger);
 let timeout;
 let animation = document.querySelector('.sidebar .sprite');
 
-gsap.to('.sidbar', {
-    ScrollTrigger: {
+gsap.to('.sidebar', {
+    scrollTrigger: {
         markers: true,
         trigger: '.sidebar',
         onUpdate: (e) => {
-            animation.classList.add('idle');
+            animation.classList.remove('idle');
             clearTimeout(timeout);
             timeout = setTimeout(() => {
-                animation.classList.remove('idle')
+                animation.classList.add('idle')
             }, 250)
 
             if (e.direction == 1) {
