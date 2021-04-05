@@ -67,3 +67,38 @@ footer {
     }
   }
 }
+
+.sidebar-alt{
+  position:sticky;
+  top:30%;
+  .sprite{
+    background-size: 100%;
+    width: 23.5vw;
+    height: 0;
+    padding-bottom: 100%;
+
+    &.idle{
+      background-image: url('/img/oli_idle.png');
+      animation: idle 1s infinite steps(22);
+      from {background-position: 0 0;}
+      to {background-position: 0 100%}
+    }
+
+    &.up{
+      background-image: url('/img/oli_scroll.png');
+      animation: idle 1s reverse infinite steps(20);
+      from {background-position: 0 0;}
+      to {background-position: 0 100%}
+    }
+
+    &.down{
+      background-image: url('/img/oli_play.png');
+      animation: idle 1s infinite steps(20);
+      from {background-position: 0 0;}
+      to {background-position: 0 100%}
+    }
+
+  }
+
+
+}
