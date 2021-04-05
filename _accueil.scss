@@ -45,32 +45,29 @@
 
 .sidebar {
   position: sticky;
-  top: 40%;
+  top: 35%;
   .sprite {
     background-size: 100%;
-    width: 22.5vw; height: 0;
+    width: 100%; height: 0;
     padding-bottom: 100%;
-
     &.idle {
-      background-image: url('/img/raph_idle.png');
+      background-image: url('../../img/raph_idle.png');
       animation: idle 1s infinite steps(33);
       @keyframes idle {
         from {background-position: 0 0;}
         to {background-position: 0 100%;}
       }
     }
-
     &.up {
-      background-image: url('/img/raph_recule.png');
+      background-image: url('../../img/raph_recule.png');
       animation: recule 1s infinite steps(33);
       @keyframes recule {
         from {background-position: 0 0;}
         to {background-position: 0 100%;}
       }
     }
-
     &.down {
-      background-image: url('/img/raph_avance.png');
+      background-image: url('../../img/raph_avance.png');
       animation: avance 1s infinite steps(33);
       @keyframes avance {
         from {background-position: 0 0;}

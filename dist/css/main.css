@@ -162,18 +162,18 @@ a {
 
 .sidebar {
   position: sticky;
-  top: 40%;
+  top: 35%;
 }
 
 .sidebar .sprite {
   background-size: 100%;
-  width: 22.5vw;
+  width: 100%;
   height: 0;
   padding-bottom: 100%;
 }
 
 .sidebar .sprite.idle {
-  background-image: url("/img/raph_idle.png");
+  background-image: url("../../img/raph_idle.png");
   animation: idle 1s infinite steps(33);
 }
 
@@ -187,7 +187,7 @@ a {
 }
 
 .sidebar .sprite.up {
-  background-image: url("/img/raph_recule.png");
+  background-image: url("../../img/raph_recule.png");
   animation: recule 1s infinite steps(33);
 }
 
@@ -201,7 +201,7 @@ a {
 }
 
 .sidebar .sprite.down {
-  background-image: url("/img/raph_avance.png");
+  background-image: url("../../img/raph_avance.png");
   animation: avance 1s infinite steps(33);
 }
 
