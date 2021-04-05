@@ -356,46 +356,49 @@ footer a:hover {
 
 .sidebar-alt .sprite {
   background-size: 100%;
-  width: 23.5vw;
+  width: 100%;
   height: 0;
   padding-bottom: 100%;
 }
 
 .sidebar-alt .sprite.idle {
-  background-image: url("/img/oli_idle.png");
+  background-image: url("../../img/oli_idle.png");
   animation: idle 1s infinite steps(22);
 }
 
-.sidebar-alt .sprite.idle from {
-  background-position: 0 0;
-}
-
-.sidebar-alt .sprite.idle to {
-  background-position: 0 100%;
+@keyframes idle {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
 }
 
 .sidebar-alt .sprite.up {
-  background-image: url("/img/oli_scroll.png");
-  animation: idle 1s reverse infinite steps(20);
+  background-image: url("../../img/oli_scroll.png");
+  animation: scroll 0.5s infinite steps(18);
 }
 
-.sidebar-alt .sprite.up from {
-  background-position: 0 0;
-}
-
-.sidebar-alt .sprite.up to {
-  background-position: 0 100%;
+@keyframes scroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
 }
 
 .sidebar-alt .sprite.down {
-  background-image: url("/img/oli_play.png");
-  animation: idle 1s infinite steps(20);
+  background-image: url("../../img/oli_play.png");
+  animation: play 1s infinite steps(20);
 }
 
-.sidebar-alt .sprite.down from {
-  background-position: 0 0;
-}
-
-.sidebar-alt .sprite.down to {
-  background-position: 0 100%;
+@keyframes play {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
 }

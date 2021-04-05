@@ -55,7 +55,7 @@ footer {
 
 .heros {
   .swiper-container {
-      background-color: #262626;
+    background-color: #262626;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -68,37 +68,53 @@ footer {
   }
 }
 
-.sidebar-alt{
-  position:sticky;
-  top:30%;
-  .sprite{
+.sidebar-alt {
+  position: sticky;
+  top: 30%;
+  .sprite {
     background-size: 100%;
-    width: 23.5vw;
+    width: 100%;
     height: 0;
     padding-bottom: 100%;
 
-    &.idle{
-      background-image: url('/img/oli_idle.png');
+    &.idle {
+      background-image: url('../../img/oli_idle.png');
       animation: idle 1s infinite steps(22);
-      from {background-position: 0 0;}
-      to {background-position: 0 100%}
+      @keyframes idle {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 0 100%;
+        }
+      }
     }
 
-    &.up{
-      background-image: url('/img/oli_scroll.png');
-      animation: idle 1s reverse infinite steps(20);
-      from {background-position: 0 0;}
-      to {background-position: 0 100%}
+    &.up {
+      background-image: url('../../img/oli_scroll.png');
+      animation: scroll 0.5s infinite steps(18);
+
+      @keyframes scroll {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 0 100%;
+        }
+      }
     }
 
-    &.down{
-      background-image: url('/img/oli_play.png');
-      animation: idle 1s infinite steps(20);
-      from {background-position: 0 0;}
-      to {background-position: 0 100%}
+    &.down {
+      background-image: url('../../img/oli_play.png');
+      animation: play 1s infinite steps(20);
+      @keyframes play {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 0 100%;
+        }
+      }
     }
-
   }
-
-
 }

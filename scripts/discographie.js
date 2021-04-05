@@ -7,22 +7,29 @@ const swiper = new Swiper('.swiper-container', {
   });
 
   gsap.registerPlugin(ScrollTrigger);
+  let timeout;
+  let animation = document.querySelector('.sidebar-alt .sprite');
 
-  gsap.to('#main'),{
-    ScrollTrigger:{
-      markers:true,
+  gsap.to('#main',{
+    scrollTrigger:{
       trigger:'#main',
       onUpdate:(e)=>{
-        Animation.classList.add(.idle);
+        animation.classList.remove('idle');
         clearTimeout(timeout);
-        timeout = setTimeout(()=>{
-          Animation.classList.remove('idle')
+        timeout= setTimeout(()=>{
+          animation.classList.add('idle')
+          animation.classList.remove('down');
+          animation.classList.remove('up');
         },250)
-
+        
         if(e.direction ==1){
-          Animation.classList.add('down');
-          Animation.classList.remove('up')
+          animation.classList.add('down');
+          animation.classList.remove('up');
+
+        }if(e.direction==-1){
+          animation.classList.remove('down');
+          animation.classList.add('up');
         }
       }
     }
-  }
+  })
