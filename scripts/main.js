@@ -257,6 +257,14 @@ class Quiz {
                         {y: '20', opacity: '0', duration: 0.3});
   }
   wrongAnswer() {
+    gsap.timeline().fromTo('.stamp',
+                        {x:'0', y: '0', scale: '4', opacity:'0'},
+                        {scale:'1', x: '-50%', y: '-45%', opacity: '1', duration: 0.4, ease: 'power4.out'})
+                    .fromTo('.stamp',
+                           {x: '-50%', y: '-45%', scale:'1', opacity:'1'},
+                            //Utilisation d'un delai entre animation
+                           {x: '50%', y: '45%', scale:'4', opacity:'0', duration: 0.5, ease: 'power3.in'}, '+=0.25')
+                           
     gsap.timeline().fromTo('.fail', 
                         {opacity: '0'},
                         {opacity:'1', duration: 0.25}, '+=0.6')
