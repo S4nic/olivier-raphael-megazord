@@ -3,38 +3,38 @@ gsap.registerPlugin(ScrollTrigger);
 let sections = document.querySelectorAll('.section');
 
 sections.forEach(section => {
-    //accueil
-   let title = section.querySelectorAll('#title');
-   let card = section.querySelectorAll('.card');
-   let carousel = section.querySelector('.swiper-container');
-   let video = section.querySelector('iframe');
+  //accueil
+  let title = section.querySelectorAll('#title');
+  let card = section.querySelectorAll('.card');
+  let carousel = section.querySelector('.swiper-container');
+  let video = section.querySelector('iframe');
 
-   //discographie
-   let list = section.querySelector('#list');
-   let img = section.querySelector('#img_disco');
-   let btn = section.querySelector('#btn_list')
+  //discographie
+  let list = section.querySelector('#list');
+  let img = section.querySelector('#img_disco');
+  let btn = section.querySelector('#btn_list')
 
-   gsap.timeline({
-       scrollTrigger: {
-           start: 'top 70%',
-           trigger: section,
-           toggleActions: 'play none none reverse',
-       }
-   })
-   .from(title, 
-                    {x: -25, opacity: 0})
+  gsap.timeline({
+    scrollTrigger: {
+      start: 'top 70%',
+      trigger: section,
+      toggleActions: 'play none none reverse',
+    }
+  })
+    .from(title,
+      { x: -25, opacity: 0 })
     .from(card,
-                    {y: 25, opacity: 0}, '-= 0.1')
+      { y: 25, opacity: 0 }, '-= 0.1')
     .from(carousel,
-                    {y: 25, opacity: 0}, '-= 0.3')
+      { y: 25, opacity: 0 }, '-= 0.3')
     .from(video,
-                    {y: 25, opacity: 0}, '-= 0.3')
+      { y: 25, opacity: 0 }, '-= 0.3')
     .from(list,
-                    {y: 25, opacity: 0}, '-= 0.3')
+      { y: 25, opacity: 0 }, '-= 0.3')
     .from(img,
-                    {x: 25, opacity: 0}, '-= 0.3')
+      { x: 25, opacity: 0 }, '-= 0.3')
     .from(btn,
-                    {y: 25, opacity: 0}, '-= 0.3')
+      { y: 25, opacity: 0 }, '-= 0.3')
 });
 
 
@@ -258,25 +258,25 @@ class Quiz {
   }
   wrongAnswer() {
     gsap.timeline().fromTo('.stamp',
-                        {x:'0', y: '0', scale: '4', opacity:'0'},
-                        {scale:'1', x: '-50%', y: '-45%', opacity: '1', duration: 0.4, ease: 'power4.out'})
-                    .fromTo('.stamp',
-                           {x: '-50%', y: '-45%', scale:'1', opacity:'1'},
-                            //Utilisation d'un delai entre animation
-                           {x: '50%', y: '45%', scale:'4', opacity:'0', duration: 0.5, ease: 'power3.in'}, '+=0.25')
-                           
-    gsap.timeline().fromTo('.fail', 
-                        {opacity: '0'},
-                        {opacity:'1', duration: 0.25}, '+=0.6')
-                 .fromTo('.fail',
-                         {rotate: '25', ease: 'power3.out'},
-                         {rotate: '-25', duration: 0.5, ease:'power2.in', repeat: 3, yoyo:true}, '+=0.05')
-                  .fromTo('.fail', 
-                          {rotate:'25'},
-                          {rotate:'45', ease: 'power4.in', duration: 0.5})
-                  .fromTo('.fail',
-                          {x:'0'},
-                          {x: '-100vw', duration: 0.5})
+      { x: '0', y: '0', scale: '4', opacity: '0', zIndex: 5 },
+      { scale: '1', x: '-50%', y: '-45%', opacity: '1', duration: 0.4, ease: 'power4.out' })
+      .fromTo('.stamp',
+        { x: '-50%', y: '-45%', scale: '1', opacity: '1' },
+        //Utilisation d'un delai entre animation
+        { x: '50%', y: '45%', scale: '4', opacity: '0', duration: 0.5, ease: 'power3.in', zIndex: -1 }, '+=0.25')
+
+    gsap.timeline().fromTo('.fail',
+      { opacity: '0' },
+      { opacity: '1', duration: 0.25 }, '+=0.6')
+      .fromTo('.fail',
+        { rotate: '25', ease: 'power3.out' },
+        { rotate: '-25', duration: 0.5, ease: 'power2.in', repeat: 3, yoyo: true }, '+=0.05')
+      .fromTo('.fail',
+        { rotate: '25' },
+        { rotate: '45', ease: 'power4.in', duration: 0.5 })
+      .fromTo('.fail',
+        { x: '0' },
+        { x: '-100vw', duration: 0.5 })
     gsap.timeline().fromTo('.fail',
       { opacity: '0' },
       { opacity: '1', duration: 0.25 }, '+=0.2')
