@@ -259,7 +259,7 @@ class Quiz {
   wrongAnswer() {
     gsap.timeline().fromTo('.fail', 
                         {opacity: '0'},
-                        {opacity:'1', duration: 0.25}, '+=0.6')
+                        {opacity:'1', duration: 0.25}, '+=0.2')
                  .fromTo('.fail',
                          {rotate: '25', ease: 'power3.out'},
                          {rotate: '-25', duration: 0.5, ease:'power2.in', repeat: 3, yoyo:true}, '+=0.05')
