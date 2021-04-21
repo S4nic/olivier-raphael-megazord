@@ -64,6 +64,10 @@ a {
   color: #8d8d8d;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .heros {
   color: #ebebeb;
 }
@@ -117,6 +121,71 @@ a {
 
 .modal-backdrop {
   background-color: rgba(50, 50, 50, 0.5);
+}
+
+.modal-header.quiz {
+  background-color: #0097dd;
+  color: #ebebeb;
+}
+
+.modal-header.quiz-alt {
+  background-color: #18684d;
+  color: #ebebeb;
+}
+
+.modal-body.quiz input[type='radio'] {
+  margin-right: 5px;
+}
+
+.modal-body.quiz .question {
+  display: none;
+}
+
+.modal-body.quiz .is-visible {
+  display: block;
+}
+
+.modal-body.quiz .question.is-visible.last {
+  text-align: center;
+  font-family: 1.2rem;
+}
+
+.modal-body.quiz .question.is-visible.last strong {
+  font-size: 3rem;
+}
+
+.modal-body.quiz .success, .modal-body.quiz .stamp, .modal-body.quiz .text-success {
+  opacity: 0;
+}
+
+.modal-body.quiz .success {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  z-index: 3;
+}
+
+.modal-body.quiz .stamp {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  z-index: 5;
+}
+
+.modal-body.quiz .text-success {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #00cc00;
+  z-index: 4;
+  -webkit-text-stroke: 2px #00a300;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .heros {
