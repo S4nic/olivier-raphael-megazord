@@ -257,7 +257,26 @@ class Quiz {
                         {y: '20', opacity: '0', duration: 0.3});
   }
   wrongAnswer() {
-    //Code à écrire ici
+    gsap.timeline().fromTo('.fail', 
+                        {opacity: '0'},
+                        {opacity:'1', duration: 0.25}, '+=0.6')
+                 .fromTo('.fail',
+                         {rotate: '25', ease: 'power3.out'},
+                         {rotate: '-25', duration: 0.5, ease:'power2.in', repeat: 3, yoyo:true}, '+=0.05')
+                  .fromTo('.fail', 
+                          {rotate:'25'},
+                          {rotate:'45', ease: 'power4.in', duration: 0.5})
+                  .fromTo('.fail',
+                          {x:'0'},
+                          {x: '-100vw', duration: 0.5})
+
+  gsap.timeline().fromTo('.text-fail',
+                        {opacity: '0', rotate: '0'},
+                        {opacity:'1', rotate: '360', duration:'1.5'}, '+=0.65')
+                  .fromTo('.text-fail',
+                         {scaleY: '1'},
+                         {scaleY:'0', duration: 0.5, delay: 0.5, onComplete() { console.log('FINI')}})
+ 
   }
 }
 
