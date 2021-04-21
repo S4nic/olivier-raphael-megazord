@@ -208,14 +208,14 @@ class Quiz {
             this.wrongAnswer();
           }
           if (this.index <= this.questions.length - 1) {
-              if(this.index == this.questions.length - 1) {
-                  this.div.classList.add('last');
-                  this.div.innerText = 'Pointage:';
-                  this.strong.innerText = this.score + '/' + this.questions.length;
-                  this.div.appendChild(this.br);
-                  this.div.appendChild(this.strong);
-                  return false;
-              }
+            if (this.index == this.questions.length - 1) {
+              this.div.classList.add('last');
+              this.div.innerText = 'Pointage:';
+              this.strong.innerText = this.score + '/' + this.questions.length;
+              this.div.appendChild(this.br);
+              this.div.appendChild(this.strong);
+              return false;
+            }
             this.index++;
             this.setVisible(this.index);
           }
@@ -226,35 +226,35 @@ class Quiz {
   goodAnswer() {
     this.score++;
     gsap.timeline().fromTo('.stamp',
-                        {x: '0', y: '0', scale: '4', opacity: '0', zIndex: 5},
-                        {scale: '1', x: '-50%', y: '-45%', opacity: '1', duration: 0.4, ease: 'power4.out'})
-                 .fromTo('.stamp',
-                        {x: '-50%', y: '-45%', scale: '1', opacity: '1'}, 
-                         //utilisation d'un délai entre animation
-                        {x: '50%', y: '45%', scale: '4', opacity: '0', duration: 0.5, ease: 'power3.in', zIndex: -1}, '+=0.15');
+      { x: '0', y: '0', scale: '4', opacity: '0', zIndex: 5 },
+      { scale: '1', x: '-50%', y: '-45%', opacity: '1', duration: 0.4, ease: 'power4.out' })
+      .fromTo('.stamp',
+        { x: '-50%', y: '-45%', scale: '1', opacity: '1' },
+        //utilisation d'un délai entre animation
+        { x: '50%', y: '45%', scale: '4', opacity: '0', duration: 0.5, ease: 'power3.in', zIndex: -1 }, '+=0.15');
 
-  gsap.timeline().fromTo('.success',
-                        {opacity: '0'},
-                        {opacity: '1', duration: 0.25}, '+=0.65')
-                 .fromTo('.success',
-                        {rotate: '25', ease: 'power3.out'},
-                        {rotate: '-25', duration: 0.5, ease: 'power2.in', repeat: 3, yoyo: true}, '+=0.05')
-                 .fromTo('.success',
-                        {rotate: '25'},
-                        {rotate: '-45', ease: 'power4.in', duration: 0.3})
-                 .fromTo('.success',
-                        {x: '0'},
-                        {x: '100vw', duration: 0.5});
+    gsap.timeline().fromTo('.success',
+      { opacity: '0' },
+      { opacity: '1', duration: 0.25 }, '+=0.65')
+      .fromTo('.success',
+        { rotate: '25', ease: 'power3.out' },
+        { rotate: '-25', duration: 0.5, ease: 'power2.in', repeat: 3, yoyo: true }, '+=0.05')
+      .fromTo('.success',
+        { rotate: '25' },
+        { rotate: '-45', ease: 'power4.in', duration: 0.3 })
+      .fromTo('.success',
+        { x: '0' },
+        { x: '100vw', duration: 0.5 });
 
-  gsap.timeline().fromTo('.text-success',
-                        {opacity: '0', rotate: '0'},
-                        {opacity: '1', rotate: '360', ease: 'back.out', duration: 1.5}, '+=0.90')
-                 .fromTo('.text-success',
-                        {scale: '1'},
-                        {scale: '1.2', duration: 0.3, repeat: 3, yoyo: true})
-                 .fromTo('.text-success', 
-                        {y: '0'},
-                        {y: '20', opacity: '0', duration: 0.3});
+    gsap.timeline().fromTo('.text-success',
+      { opacity: '0', rotate: '0' },
+      { opacity: '1', rotate: '360', ease: 'back.out', duration: 1.5 }, '+=0.90')
+      .fromTo('.text-success',
+        { scale: '1' },
+        { scale: '1.2', duration: 0.3, repeat: 3, yoyo: true })
+      .fromTo('.text-success',
+        { y: '0' },
+        { y: '20', opacity: '0', duration: 0.3 });
   }
   wrongAnswer() {
     gsap.timeline().fromTo('.stamp',
@@ -277,14 +277,26 @@ class Quiz {
                   .fromTo('.fail',
                           {x:'0'},
                           {x: '-100vw', duration: 0.5})
+    gsap.timeline().fromTo('.fail',
+      { opacity: '0' },
+      { opacity: '1', duration: 0.25 }, '+=0.2')
+      .fromTo('.fail',
+        { rotate: '25', ease: 'power3.out' },
+        { rotate: '-25', duration: 0.5, ease: 'power2.in', repeat: 3, yoyo: true }, '+=0.05')
+      .fromTo('.fail',
+        { rotate: '25' },
+        { rotate: '45', ease: 'power4.in', duration: 0.5 })
+      .fromTo('.fail',
+        { x: '0' },
+        { x: '-100vw', duration: 0.5 })
 
-  gsap.timeline().fromTo('.text-fail',
-                        {opacity: '0', rotate: '0'},
-                        {opacity:'1', rotate: '360', duration:'1.5'}, '+=0.65')
-                  .fromTo('.text-fail',
-                         {scaleY: '1'},
-                         {scaleY:'0', duration: 0.5, delay: 0.5, onComplete() { console.log('FINI')}})
- 
+    gsap.timeline().fromTo('.text-fail',
+      { opacity: '0', rotate: '0' },
+      { opacity: '1', rotate: '360', duration: '1.5' }, '+=0.65')
+      .fromTo('.text-fail',
+        { scaleY: '1' },
+        { scaleY: '0', duration: 0.5, delay: 0.5, onComplete() { console.log('FINI') } })
+
   }
 }
 
