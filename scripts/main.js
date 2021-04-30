@@ -12,7 +12,7 @@ sections.forEach(section => {
   //discographie
   let list = section.querySelector('#list');
   let img = section.querySelector('#img_disco');
-  let btn = section.querySelector('#btn_list')
+  let btn = section.querySelector('#btn_list');
 
   gsap.timeline({
     scrollTrigger: {
@@ -40,9 +40,9 @@ sections.forEach(section => {
 
 //QUESTIONS
 let modal = document.querySelector('.modal-body.quiz');
-fetch('twrp.online/json')
+fetch('https://twrp.online/json')
 .then(response => response.json())
-.then(result => new Quiz(result));
+.then(result => new Quiz(result.Questions));
 
 class Quiz {
   constructor(tableau) {
