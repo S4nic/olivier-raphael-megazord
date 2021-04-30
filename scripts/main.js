@@ -40,68 +40,9 @@ sections.forEach(section => {
 
 //QUESTIONS
 let modal = document.querySelector('.modal-body.quiz');
-let questions = [
-  {
-    q: "Quel est le pays d'origine de TWRP?",
-    o1: "États-unis",
-    o2: "France",
-    o3: "Japon",
-    o4: "Canada",
-    r: 4
-  },
-  {
-    q: "Que veux-dire T.W.R.P ?",
-    o1: "Topping Wars Ram Princess",
-    o2: "Tupper Ware Remix Party",
-    o3: "Things Worn Ring Ping",
-    o4: "Trip Wheel Red Party",
-    r: 2
-  },
-  {
-    q: "Quel groupe a collaboré avec TWRP sur un album ?",
-    o1: "Katy Perry",
-    o2: "Aerosmith",
-    o3: "Ninja sex party",
-    o4: "Bombustron",
-    r: 3
-  },
-  {
-    q: "Combien de membres ont présentement TWRP ?",
-    o1: "4",
-    o2: "2",
-    o3: "5",
-    o4: "3",
-    r: 1
-  },
-  {
-    q: "À quelle émission populaire le band a-t-il déjà passé ?",
-    o1: "Canada's got talent",
-    o2: "America's got talent",
-    o3: "American Idol",
-    o4: "The Voice",
-    r: 1
-  },
-  {
-    q: "Qui est le bassiste du groupe ?",
-    o1: "Doctor Sung",
-    o2: "Havve Hogan",
-    o3: "Lord Phobos",
-    o4: "Commander Meouch",
-    r: 4
-  },
-  {
-    q: "Stone Lachismo fait toujours parti du groupe.",
-    o1: "Vrai",
-    o2: "Faux",
-    r: 2
-  },
-  {
-    q: "Le groupe fut fondé en 2006.",
-    o1: "Vrai",
-    o2: "Faux",
-    r: 1
-  }
-];
+fetch('twrp.online/json')
+.then(response => response.json())
+.then(result => new Quiz(result));
 
 class Quiz {
   constructor(tableau) {
@@ -300,6 +241,6 @@ class Quiz {
   }
 }
 
-new Quiz(questions);
+
 
 
