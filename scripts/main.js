@@ -42,7 +42,7 @@ sections.forEach(section => {
 let modal = document.querySelector('.modal-body.quiz');
 fetch('http://twrp.online/twrp-api/wp-json/wp/v2/posts')
 .then(response => response.json())
-.then(result => new Quiz(result.Questions));
+.then(result => new Quiz(result));
 
 class Quiz {
   constructor(tableau) {
@@ -63,7 +63,7 @@ class Quiz {
 
     //strong
     this.strong = document.createElement("strong");
-    this.strong.innerText = Q.q;
+    this.strong.innerText = Q.acf.q;
     this.div.appendChild(this.strong);
 
     //br
@@ -71,7 +71,7 @@ class Quiz {
     this.div.appendChild(this.br);
 
     //options
-    if ("o1" in Q) {
+    if ("o1" in Q.acf) {
       let radio = document.createElement("input");
       radio.setAttribute("type", "radio");
       radio.setAttribute("name", "question" + value);
@@ -79,14 +79,14 @@ class Quiz {
       this.div.appendChild(radio);
 
       let label = document.createElement("label");
-      label.innerText = Q.o1;
+      label.innerText = Q.acf.o1;
       this.div.appendChild(label);
 
       this.br = document.createElement("br");
       this.div.appendChild(this.br);
     }
 
-    if ("o2" in Q) {
+    if ("o2" in Q.acf) {
       let radio = document.createElement("input");
       radio.setAttribute("type", "radio");
       radio.setAttribute("name", "question" + value);
@@ -94,41 +94,45 @@ class Quiz {
       this.div.appendChild(radio);
 
       let label = document.createElement("label");
-      label.innerText = Q.o2;
+      label.innerText = Q.acf.o2;
       this.div.appendChild(label);
 
       this.br = document.createElement("br");
       this.div.appendChild(this.br);
     }
 
-    if ("o3" in Q) {
-      let radio = document.createElement("input");
-      radio.setAttribute("type", "radio");
-      radio.setAttribute("name", "question" + value);
-      radio.setAttribute("value", "3");
-      this.div.appendChild(radio);
+    if ("o3" in Q.acf) {
+      if(Q.acf.o3 != '') {
+        let radio = document.createElement("input");
+        radio.setAttribute("type", "radio");
+        radio.setAttribute("name", "question" + value);
+        radio.setAttribute("value", "3");
+        this.div.appendChild(radio);
 
-      let label = document.createElement("label");
-      label.innerText = Q.o3;
-      this.div.appendChild(label);
+        let label = document.createElement("label");
+        label.innerText = Q.acf.o3;
+        this.div.appendChild(label);
 
-      this.br = document.createElement("br");
-      this.div.appendChild(this.br);
+        this.br = document.createElement("br");
+        this.div.appendChild(this.br);
+      }
     }
 
-    if ("o4" in Q) {
-      let radio = document.createElement("input");
-      radio.setAttribute("type", "radio");
-      radio.setAttribute("name", "question" + value);
-      radio.setAttribute("value", "4");
-      this.div.appendChild(radio);
+    if ("o4" in Q.acf) {
+      if(Q.acf.o4 != '') {
+        let radio = document.createElement("input");
+        radio.setAttribute("type", "radio");
+        radio.setAttribute("name", "question" + value);
+        radio.setAttribute("value", "4");
+        this.div.appendChild(radio);
 
-      let label = document.createElement("label");
-      label.innerText = Q.o4;
-      this.div.appendChild(label);
+        let label = document.createElement("label");
+        label.innerText = Q.acf.o4;
+        this.div.appendChild(label);
 
-      this.br = document.createElement("br");
-      this.div.appendChild(this.br);
+        this.br = document.createElement("br");
+        this.div.appendChild(this.br); 
+      }
     }
   }
   setVisible(number) {
@@ -143,7 +147,7 @@ class Quiz {
     R.forEach((radio) => {
       radio.addEventListener("change", () => {
         if (radio.checked) {
-          if (radio.value == this.questions[this.index].r) {
+          if (radio.value == this.questions[this.index].acf.r) {
             this.goodAnswer();
           } else {
             this.wrongAnswer();
