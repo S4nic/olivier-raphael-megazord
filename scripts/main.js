@@ -40,7 +40,7 @@ sections.forEach(section => {
 
 //QUESTIONS
 let modal = document.querySelector('.modal-body.quiz');
-fetch('https://twrp.online/json')
+fetch('http://twrp.online/twrp-api/wp-json/wp/v2/posts')
 .then(response => response.json())
 .then(result => new Quiz(result.Questions));
 
