@@ -1,5 +1,237 @@
+//color
+$bg: #262626;
+$text: #ebebeb;
+$text-hover: #8d8d8d;
+$text-alt: #202020;
+$primary: #0097dd;
+$primary-alt: #9fe1ff;
+$primary-hover: #0076c5;
+$secondary: #18684d;
+$secondary-alt: #6bc5a6;
+$secondary-hover: #144e3b;
 
+//typo
+$title: "hammersmith One", sans-serif;
+$regular: "roboto", sans-serif;
 
-@import url('dist/css/accueil.css');
-@import url('dist/css/discographie.css');
+//taille text
+$text-title: 8rem;
+$text-alt-title: 2.5rem;
+$text-subtitle: 1.8rem;
+$text-subtitle-alt: 1.5rem;
+$text-regular: 1.2rem;
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  color: $text-alt;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: $text-title;
+  font-family: $title;
+}
+h2 {
+  font-size: $text-alt-title;
+  font-family: $title;
+}
+h3 {
+  font-size: $text-subtitle;
+  font-family: $regular;
+}
+h4 {
+  font-size: $text-subtitle-alt;
+  font-family: $title;
+}
+h5 {
+  font-size: $text-regular;
+  font-family: $regular;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: $text;
+}
+
+.ratio {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $text-hover;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.heros {
+  color: $text;
+}
+
+.stroke {
+  color: transparent;
+  -webkit-text-stroke: 3px $text;
+}
+
+.spacing5 {
+  letter-spacing: 5px;
+}
+.spacing10 {
+  letter-spacing: 10px;
+}
+
+.btn {
+  padding: 0.8rem 1.2rem;
+  margin: 0.6rem;
+  font-family: $title;
+}
+
+.btn.btn--primary {
+  color: $text;
+  background-color: $primary;
+  &:hover {
+    background-color: $primary-hover;
+  }
+}
+
+.btn.btn--secondary {
+  color: $text;
+  background-color: $secondary;
+  &:hover {
+    background-color: $secondary-hover;
+  }
+}
+
+.modal {
+  .modal-body {
+    img {
+      display: block;
+      width: 300px;
+      margin: 0 auto;
+    }
+  }
+}
+.modal-open > :not(.modal) {
+  filter: blur(10px);
+}
+.modal-backdrop {
+  background-color: rgba(50, 50, 50, 0.5);
+}
+.modal-header.quiz {
+  background-color: $primary;
+  color: $text;
+}
+.modal-header.quiz-alt {
+  background-color: $secondary;
+  color: $text;
+}
+
+.modal-body.quiz {
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  .question {
+    display: none;
+  }
+  .is-visible {
+    display: block;
+  }
+  .question.is-visible.last {
+    text-align: center;
+    font-family: $text-regular;
+    strong {
+      font-size: 3rem;
+    }
+  }
+  .success,
+  .stamp,
+  .text-success {
+    opacity: 0;
+  }
+  .success {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    z-index: 3;
+  }
+  .stamp {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    z-index: 5;
+  }
+  .text-success {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #00cc00;
+    z-index: 4;
+
+    -webkit-text-stroke: 2px #00a300;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  }
+  //Rajouter les classes à oli
+  .fail,
+  .text-fail {
+    opacity: 0;
+  }
+
+  .fail {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 110px;
+    z-index: 3;
+  }
+
+  .text-fail {
+    z-index: 4;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #c22929;
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 2px #8f1f1f;
+  }
+}
+
+@import "accueil";
+@import "discographie";
